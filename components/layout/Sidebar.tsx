@@ -34,8 +34,8 @@ export default function Sidebar() {
             <Link
                 href={item.href}
                 className={`flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors ${active
-                        ? 'bg-[#234836] text-primary shadow-sm'
-                        : 'text-text-subtle hover:bg-[#234836]/50 hover:text-white'
+                    ? 'bg-[#234836] text-primary shadow-sm'
+                    : 'text-text-subtle hover:bg-[#234836]/50 hover:text-white'
                     }`}
             >
                 <span className="material-symbols-outlined">{item.icon}</span>
@@ -59,7 +59,7 @@ export default function Sidebar() {
                     </div>
                     <div className="flex flex-col">
                         <h1 className="text-white text-lg font-bold leading-tight">EcoPulse</h1>
-                        <p className="text-text-subtle text-xs font-medium">Predictive Maintenance</p>
+                        <p className="text-text-subtle text-xs font-medium">System Monitor</p>
                     </div>
                 </Link>
 

@@ -31,7 +31,7 @@ export default function DocsPage() {
                             </div>
                             <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">Technical Documentation</h1>
                             <p className="text-lg text-slate-600 dark:text-[#92c9ad] max-w-3xl leading-relaxed">
-                                Technical overview, system architecture, and machine learning methodology for the Renewable Infrastructure Predictive Maintenance System.
+                                Technical overview, system architecture, and machine learning methodology for the EcoPulse Predictive Intelligence System.
                             </p>
                             <div className="flex gap-4 pt-2">
                                 <button className="flex items-center gap-2 px-5 py-2.5 bg-primary text-background-dark rounded-lg text-sm font-bold hover:bg-[#0fd470] transition-colors shadow-[0_0_15px_rgba(19,236,128,0.3)]">

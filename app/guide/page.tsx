@@ -9,7 +9,7 @@ export default function GuidePage() {
                     <div className="size-6 text-primary">
                         <span className="material-symbols-outlined text-3xl font-semibold">wind_power</span>
                     </div>
-                    <h2 className="text-lg font-extrabold leading-tight tracking-tight">Predictive Maintenance</h2>
+                    <h2 className="text-lg font-extrabold leading-tight tracking-tight">EcoPulse</h2>
                 </div>
                 <div className="flex flex-1 justify-end gap-8">
                     <nav className="hidden md:flex items-center gap-9">
@@ -63,7 +63,7 @@ export default function GuidePage() {
                                     <div className="w-3 h-3 rounded-full bg-slate-200"></div>
                                     <div className="w-3 h-3 rounded-full bg-slate-200"></div>
                                 </div>
-                                <div className="flex-1 text-center font-mono text-[10px] text-slate-400">dashboard.cleanenergy.ai</div>
+                                <div className="flex-1 text-center font-mono text-[10px] text-slate-400">dashboard.ecopulse.ai</div>
                             </div>
                             <div className="p-6 grid grid-cols-12 gap-6">
                                 <div className="hidden md:block col-span-2 space-y-4 border-r border-slate-100 pr-4">
@@ -132,7 +132,7 @@ export default function GuidePage() {
                     <div className="col-span-4 md:col-span-1">
                         <div className="flex items-center gap-2 mb-6">
                             <span className="material-symbols-outlined text-3xl text-primary font-bold">wind_power</span>
-                            <span className="font-black text-xl">CleanEnergy AI</span>
+                            <span className="font-black text-xl">EcoPulse</span>
                         </div>
                         <p className="text-sm text-slate-500">Empowering energy providers with next-gen predictive intelligence.</p>
                     </div>
@@ -148,7 +148,7 @@ export default function GuidePage() {
                     ))}
                 </div>
                 <div className="max-w-[1200px] mx-auto border-t border-slate-100 pt-8 flex justify-between items-center text-slate-400 text-xs font-bold">
-                    <p>© 2024 CleanEnergy AI. Built for the future.</p>
+                    <p>© 2024 EcoPulse. Built for the future.</p>
                     <div className="flex gap-8">
                         <a href="#">Privacy</a>
                         <a href="#">Terms</a>

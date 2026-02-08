@@ -9,8 +9,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Stitch Dashboard",
-  description: "Predictive Maintenance Overview",
+  title: "EcoPulse",
+  description: "Predictive Intelligence for Critical Infrastructure",
 };
 
 export default function RootLayout({

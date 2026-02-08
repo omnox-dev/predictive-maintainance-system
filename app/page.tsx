@@ -19,7 +19,7 @@ export default function LandingPage() {
             <div className="size-6 text-primary">
               <span className="material-symbols-outlined text-3xl">wind_power</span>
             </div>
-            <h2 className="text-lg font-bold leading-tight tracking-[-0.015em]">Predictive Maintenance</h2>
+            <h2 className="text-lg font-bold leading-tight tracking-[-0.015em]">EcoPulse</h2>
           </div>
           <div className="flex flex-1 justify-end gap-8">
             <nav className="hidden md:flex items-center gap-9">
@@ -83,7 +83,7 @@ export default function LandingPage() {
                     <div className="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/50"></div>
                   </div>
                   <div className="flex-1 text-center">
-                    <div className="inline-block px-3 py-1 rounded bg-[#183225] text-[10px] text-slate-400 font-mono">dashboard.cleanenergy.ai</div>
+                    <div className="inline-block px-3 py-1 rounded bg-[#183225] text-[10px] text-slate-400 font-mono">dashboard.ecopulse.ai</div>
                   </div>
                 </div>
                 <div className="p-6 grid grid-cols-12 gap-6 bg-[#102219]">
@@ -177,7 +177,7 @@ export default function LandingPage() {
                 <span className="material-symbols-outlined absolute top-10 left-10 text-6xl text-primary/20">format_quote</span>
                 <div className="relative z-10 flex flex-col items-center text-center">
                   <p className="text-2xl md:text-3xl font-medium text-white mb-8 leading-relaxed">
-                    "Since implementing the Predictive Maintenance platform, we've reduced our unplanned downtime by <span className="text-primary font-bold">45%</span>. The ability to forecast component fatigue has completely transformed our maintenance strategy."
+                    "Since implementing the EcoPulse platform, we've reduced our unplanned downtime by <span className="text-primary font-bold">45%</span>. The ability to forecast component fatigue has completely transformed our maintenance strategy."
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-14 h-14 rounded-full bg-slate-700 overflow-hidden border-2 border-primary">
@@ -215,7 +215,7 @@ export default function LandingPage() {
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 text-slate-900 dark:text-white mb-6">
                 <span className="material-symbols-outlined text-3xl text-primary">wind_power</span>
-                <span className="font-bold text-lg">CleanEnergy AI</span>
+                <span className="font-bold text-lg">EcoPulse</span>
               </div>
               <p className="text-sm text-slate-500 leading-relaxed">
                 Empowering renewable energy providers with next-generation predictive intelligence.
@@ -250,7 +250,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="max-w-[1200px] mx-auto border-t border-slate-200 dark:border-[#234836] pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
-            <p>© 2026 CleanEnergy AI Systems. All rights reserved.</p>
+            <p>© 2026 EcoPulse. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a className="hover:text-primary transition-colors" href="#">Privacy Policy</a>
               <a className="hover:text-primary transition-colors" href="#">Terms of Service</a>
