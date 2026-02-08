@@ -9,7 +9,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "EcoPulse",
+  title: "EcoPulse AI",
   description: "Predictive Intelligence for Critical Infrastructure",
 };
 

@@ -58,7 +58,7 @@ export default function Sidebar() {
                         <span className="material-symbols-outlined text-3xl">bolt</span>
                     </div>
                     <div className="flex flex-col">
-                        <h1 className="text-white text-lg font-bold leading-tight">EcoPulse</h1>
+                        <h1 className="text-white text-lg font-bold leading-tight">EcoPulse AI</h1>
                         <p className="text-text-subtle text-xs font-medium">System Monitor</p>
                     </div>
                 </Link>

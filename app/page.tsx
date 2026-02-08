@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 
@@ -13,13 +15,45 @@ export default function LandingPage() {
         <div className="absolute bottom-0 left-0 w-[800px] h-[600px] bg-[#234836]/20 rounded-full blur-[120px] -z-10 transition-opacity duration-1000"></div>
         <div className="absolute inset-0 bg-[url('https://placeholder.pics/svg/20')] opacity-5 pointer-events-none"></div>
       </div>
+
+      {/* Prototype Notice */}
+      <div className="fixed bottom-6 right-6 z-[100] max-w-sm animate-bounce-in">
+        <div className="bg-[#11221a] border border-primary/30 p-4 rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.5)] backdrop-blur-md relative overflow-hidden group">
+          <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
+          <div className="relative flex items-start gap-3">
+            <div className="p-2 bg-primary/20 rounded-lg text-primary shrink-0">
+              <span className="material-symbols-outlined">construction</span>
+            </div>
+            <div>
+              <h4 className="text-white font-bold text-sm mb-1">Prototype Build</h4>
+              <p className="text-[#92c9ad] text-xs leading-relaxed mb-2">
+                Frontend demonstration only. Not all pages are fully implemented yet.
+              </p>
+              <div className="flex items-center gap-2 text-xs font-bold text-primary bg-primary/10 px-2 py-1.5 rounded border border-primary/20">
+                <span className="material-symbols-outlined text-sm">lightbulb</span>
+                <span>TIP: Check out the Sign In page!</span>
+              </div>
+            </div>
+            <button
+              onClick={(e) => {
+                const target = e.currentTarget.closest('.fixed');
+                if (target) target.remove();
+              }}
+              className="text-slate-500 hover:text-white transition-colors"
+            >
+              <span className="material-symbols-outlined text-sm">close</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div className="relative flex h-auto min-h-screen w-full flex-col z-10">
         <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-[#234836] px-10 py-4 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
           <div className="flex items-center gap-4 text-slate-900 dark:text-white">
             <div className="size-6 text-primary">
               <span className="material-symbols-outlined text-3xl">wind_power</span>
             </div>
-            <h2 className="text-lg font-bold leading-tight tracking-[-0.015em]">EcoPulse</h2>
+            <h2 className="text-lg font-bold leading-tight tracking-[-0.015em]">EcoPulse AI</h2>
           </div>
           <div className="flex flex-1 justify-end gap-8">
             <nav className="hidden md:flex items-center gap-9">
@@ -39,9 +73,9 @@ export default function LandingPage() {
             </nav>
             <div className="flex gap-4">
               <Link className="hidden sm:flex items-center text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="/login">Log In</Link>
-              <button className="flex items-center justify-center rounded-lg px-4 py-2 bg-primary text-background-dark font-bold hover:bg-[#0fd470] transition-colors">
+              <Link href="/development" className="flex items-center justify-center rounded-lg px-4 py-2 bg-primary text-background-dark font-bold hover:bg-[#0fd470] transition-colors">
                 Get a Demo
-              </button>
+              </Link>
             </div>
           </div>
         </header>
@@ -62,10 +96,10 @@ export default function LandingPage() {
                 Harness the power of ML-driven insights to predict failures before they happen. Reduce maintenance costs by up to 30% and boost energy output.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="flex items-center justify-center gap-2 px-8 py-4 bg-primary text-background-dark rounded-xl text-lg font-bold hover:bg-[#0fd470] transition-all hover:scale-105 shadow-[0_0_20px_rgba(19,236,128,0.4)]">
+                <Link href="/development" className="flex items-center justify-center gap-2 px-8 py-4 bg-primary text-background-dark rounded-xl text-lg font-bold hover:bg-[#0fd470] transition-all hover:scale-105 shadow-[0_0_20px_rgba(19,236,128,0.4)]">
                   Get a Demo
                   <span className="material-symbols-outlined">arrow_forward</span>
-                </button>
+                </Link>
                 <Link href="/dashboard" className="flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-white rounded-xl text-lg font-bold hover:bg-slate-100 dark:hover:bg-[#234836] transition-colors">
                   <span className="material-symbols-outlined">dashboard</span>
                   View Dashboard
@@ -174,14 +208,14 @@ export default function LandingPage() {
           <section className="w-full py-20 px-4 sm:px-10 relative overflow-hidden">
             <div className="max-w-5xl mx-auto">
               <div className="relative bg-surface-dark rounded-3xl p-10 md:p-16 border border-[#234836]">
-                <span className="material-symbols-outlined absolute top-10 left-10 text-6xl text-primary/20">format_quote</span>
+                <span className="absolute top-4 left-6 text-9xl text-primary/10 font-serif leading-none select-none">“</span>
                 <div className="relative z-10 flex flex-col items-center text-center">
                   <p className="text-2xl md:text-3xl font-medium text-white mb-8 leading-relaxed">
-                    "Since implementing the EcoPulse platform, we've reduced our unplanned downtime by <span className="text-primary font-bold">45%</span>. The ability to forecast component fatigue has completely transformed our maintenance strategy."
+                    "Since implementing the EcoPulse AI platform, we've reduced our unplanned downtime by <span className="text-primary font-bold">45%</span>. The ability to forecast component fatigue has completely transformed our maintenance strategy."
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-14 h-14 rounded-full bg-slate-700 overflow-hidden border-2 border-primary">
-                      <img alt="Portrait" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUZzTYsVAvkwBdSaVdvYq2DkaZ1_iM8o5fIERAvZPYSgtMQtRL9aVYaFW8Y5_KoachPVsaPAwj5YgomTaJBy0ABG9koyD3CJZxFW3-li2KE0pzXb7jxbJ6iynlkpcRcD1i5_j5i-MGi79QMB6o354PV9sEilPsGbAQ3sAJcq2YNhoaPkO_dAvhmXE-Gxnl_333uT2PdOtlK5H9KoDzgBRKLZ_kKLRX99OshlrRldCGN9ZFLgNLtNrHiCOipSQYCCR0OaoHZ4BtQ5HO" />
+                      <img alt="Abstract Art" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=200&auto=format&fit=crop" />
                     </div>
                     <div className="text-left">
                       <div className="text-lg font-bold text-white">David Chen</div>
@@ -201,9 +235,9 @@ export default function LandingPage() {
                 <div className="relative w-full max-w-sm">
                   <input className="w-full px-5 py-4 bg-white dark:bg-background-dark border border-slate-300 dark:border-slate-600 rounded-xl text-slate-900 dark:text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Enter your work email" type="email" />
                 </div>
-                <button className="px-8 py-4 bg-primary text-background-dark rounded-xl text-lg font-bold hover:bg-[#0fd470] transition-colors whitespace-nowrap">
+                <Link href="/development" className="px-8 py-4 bg-primary text-background-dark rounded-xl text-lg font-bold hover:bg-[#0fd470] transition-colors whitespace-nowrap">
                   Start Free Trial
-                </button>
+                </Link>
               </div>
               <p className="text-xs text-slate-500 mt-2">No credit card required for trial. 14-day free access.</p>
             </div>
@@ -215,7 +249,7 @@ export default function LandingPage() {
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 text-slate-900 dark:text-white mb-6">
                 <span className="material-symbols-outlined text-3xl text-primary">wind_power</span>
-                <span className="font-bold text-lg">EcoPulse</span>
+                <span className="font-bold text-lg">EcoPulse AI</span>
               </div>
               <p className="text-sm text-slate-500 leading-relaxed">
                 Empowering renewable energy providers with next-generation predictive intelligence.

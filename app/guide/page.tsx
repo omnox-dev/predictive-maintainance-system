@@ -9,7 +9,7 @@ export default function GuidePage() {
                     <div className="size-6 text-primary">
                         <span className="material-symbols-outlined text-3xl font-semibold">wind_power</span>
                     </div>
-                    <h2 className="text-lg font-extrabold leading-tight tracking-tight">EcoPulse</h2>
+                    <h2 className="text-lg font-extrabold leading-tight tracking-tight">EcoPulse AI</h2>
                 </div>
                 <div className="flex flex-1 justify-end gap-8">
                     <nav className="hidden md:flex items-center gap-9">
