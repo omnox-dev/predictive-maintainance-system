@@ -7,9 +7,14 @@ import Link from 'next/link';
  */
 export default function LandingPage() {
   return (
-    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden transition-colors duration-200">
-      <div className="relative flex h-auto min-h-screen w-full flex-col">
-        <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-[#234836] px-10 py-4 bg-white dark:bg-background-dark sticky top-0 z-50">
+    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden transition-colors duration-200 relative">
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/5 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 w-[800px] h-[600px] bg-[#234836]/20 rounded-full blur-[120px] -z-10 transition-opacity duration-1000"></div>
+        <div className="absolute inset-0 bg-[url('https://placeholder.pics/svg/20')] opacity-5 pointer-events-none"></div>
+      </div>
+      <div className="relative flex h-auto min-h-screen w-full flex-col z-10">
+        <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-[#234836] px-10 py-4 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
           <div className="flex items-center gap-4 text-slate-900 dark:text-white">
             <div className="size-6 text-primary">
               <span className="material-symbols-outlined text-3xl">wind_power</span>
@@ -19,12 +24,21 @@ export default function LandingPage() {
           <div className="flex flex-1 justify-end gap-8">
             <nav className="hidden md:flex items-center gap-9">
               <Link className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="/dashboard">Platform</Link>
-              <Link className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="/assets">Solutions</Link>
-              <Link className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="/analytics/historical">Case Studies</Link>
-              <Link className="text-primary text-sm font-bold leading-normal" href="/dashboard">Pricing</Link>
+              <div className="relative group">
+                <Link className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors cursor-not-allowed opacity-50" href="/development">Solutions</Link>
+                <div className="absolute -top-3 -right-6 px-1.5 py-0.5 bg-yellow-500/10 border border-yellow-500/20 text-[8px] font-bold text-yellow-500 rounded uppercase tracking-wider">Dev</div>
+              </div>
+              <div className="relative group">
+                <Link className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors cursor-not-allowed opacity-50" href="/development">Case Studies</Link>
+                <div className="absolute -top-3 -right-6 px-1.5 py-0.5 bg-yellow-500/10 border border-yellow-500/20 text-[8px] font-bold text-yellow-500 rounded uppercase tracking-wider">Dev</div>
+              </div>
+              <div className="relative group">
+                <Link className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors cursor-not-allowed opacity-50" href="/pricing">Pricing</Link>
+                <div className="absolute -top-3 -right-6 px-1.5 py-0.5 bg-yellow-500/10 border border-yellow-500/20 text-[8px] font-bold text-yellow-500 rounded uppercase tracking-wider">Dev</div>
+              </div>
             </nav>
             <div className="flex gap-4">
-              <Link className="hidden sm:flex items-center text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="/dashboard">Log In</Link>
+              <Link className="hidden sm:flex items-center text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="/login">Log In</Link>
               <button className="flex items-center justify-center rounded-lg px-4 py-2 bg-primary text-background-dark font-bold hover:bg-[#0fd470] transition-colors">
                 Get a Demo
               </button>
@@ -38,7 +52,7 @@ export default function LandingPage() {
             <div className="max-w-4xl text-center flex flex-col items-center gap-6 z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-dark/50 border border-primary/20 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                <span className="text-primary text-xs font-bold uppercase tracking-wider">New: Turbine Health V2.0</span>
+                <span className="text-primary text-xs font-bold uppercase tracking-wider">ML Models: Training Complete</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
                 Maximize Uptime for <br />

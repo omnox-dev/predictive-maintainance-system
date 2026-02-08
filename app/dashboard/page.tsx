@@ -32,6 +32,26 @@ export default function DashboardPage() {
                         </div>
                     </header>
 
+                    {/* Disclaimer Card */}
+                    <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/5 p-4 md:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                        <div className="flex items-start gap-4">
+                            <div className="rounded-lg bg-yellow-500/10 p-2 text-yellow-500">
+                                <span className="material-symbols-outlined text-2xl">info</span>
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-white">Development Status</h3>
+                                <p className="text-sm text-[#92c9ad] mt-1">
+                                    Please note: The backend integration is currently under development.
+                                    <span className="block md:inline text-white font-medium md:ml-1">The Machine Learning models are fully trained and completed.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" className="flex items-center gap-2 rounded-lg bg-[#1a3328] border border-[#234836] px-4 py-2 text-sm font-bold text-primary hover:bg-[#234836] transition-colors whitespace-nowrap">
+                            <span className="material-symbols-outlined text-[18px]">public</span>
+                            Visit Live Site (Placeholder)
+                        </a>
+                    </div>
+
                     {/* KPI Cards */}
                     <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                         <KPICard
