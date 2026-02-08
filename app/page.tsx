@@ -218,7 +218,7 @@ export default function LandingPage() {
                       <img alt="Abstract Art" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=200&auto=format&fit=crop" />
                     </div>
                     <div className="text-left">
-                      <div className="text-lg font-bold text-white">Uttam Dombe</div>
+                      <div className="text-lg font-bold text-white">Aditya Biradawade </div>
                       <div className="text-primary text-sm font-medium">Regional Plant Manager, Helios Energy</div>
                     </div>
                   </div>
