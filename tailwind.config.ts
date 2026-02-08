@@ -19,7 +19,8 @@ const config: Config = {
                 "text-subtle": "#92c9ad",
             },
             fontFamily: {
-                display: ["var(--font-manrope)", "sans-serif"],
+                display: ["var(--font-manrope)", "ui-sans-serif", "system-ui", "sans-serif"],
+                sans: ["var(--font-manrope)", "ui-sans-serif", "system-ui", "sans-serif"],
             },
         },
     },

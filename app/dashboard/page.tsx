@@ -21,9 +21,9 @@ export default function DashboardPage() {
                             <p className="text-slate-500 dark:text-text-subtle mt-1">Real-time monitoring of renewable assets & predictive insights.</p>
                         </div>
                         <div className="flex items-center gap-3">
-                            <div className="flex items-center gap-2 rounded-lg border border-slate-200 dark:border-[#234836] bg-white dark:bg-[#1a3328] px-3 py-2 text-sm text-slate-600 dark:text-text-subtle">
+                            <div className="flex bg-white dark:bg-[#1a3328] px-3 py-2 text-sm text-slate-600 dark:text-text-subtle items-center gap-2 rounded-lg border border-slate-200 dark:border-[#234836]">
                                 <span className="material-symbols-outlined text-[20px]">calendar_today</span>
-                                <span>Oct 24, 2026</span>
+                                <span>Feb 08, 2026</span>
                             </div>
                             <button className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-[#11221a] hover:bg-opacity-90 transition-colors shadow-[0_0_15px_rgba(19,236,128,0.3)]">
                                 <span className="material-symbols-outlined text-[20px]">download</span>
@@ -41,8 +41,12 @@ export default function DashboardPage() {
                             trendLabel="vs last week"
                             trendPositive={true}
                         >
-                            <div className="radial-progress text-primary" style={{ "--value": 94, "--size": "3rem", "--thickness": "4px" } as React.CSSProperties}>
-                                <span className="material-symbols-outlined text-xl">ecg_heart</span>
+                            <div className="relative size-12 flex items-center justify-center">
+                                <svg className="size-full -rotate-90" viewBox="0 0 36 36">
+                                    <path className="text-slate-200 dark:text-[#234836]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" />
+                                    <path className="text-primary" strokeDasharray="94, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                                </svg>
+                                <span className="absolute material-symbols-outlined text-xl text-primary">ecg_heart</span>
                             </div>
                         </KPICard>
 
