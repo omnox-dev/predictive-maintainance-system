@@ -27,7 +27,7 @@ export default function DocsPage() {
                         <section className="flex flex-col gap-4 border-b border-slate-200 dark:border-[#234836] pb-8">
                             <div className="flex items-center gap-2">
                                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">Version 1.0</span>
-                                <span className="text-slate-500 dark:text-slate-400 text-sm">Last updated: Oct 2024</span>
+                                <span className="text-slate-500 dark:text-slate-400 text-sm">Last updated: Oct 2026</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">Technical Documentation</h1>
                             <p className="text-lg text-slate-600 dark:text-[#92c9ad] max-w-3xl leading-relaxed">

@@ -218,7 +218,7 @@ export default function LandingPage() {
                       <img alt="Abstract Art" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=200&auto=format&fit=crop" />
                     </div>
                     <div className="text-left">
-                      <div className="text-lg font-bold text-white">David Chen</div>
+                      <div className="text-lg font-bold text-white">Uttam Dombe</div>
                       <div className="text-primary text-sm font-medium">Regional Plant Manager, Helios Energy</div>
                     </div>
                   </div>
@@ -270,7 +270,12 @@ export default function LandingPage() {
                 <li><a className="hover:text-primary transition-colors" href="#">About Us</a></li>
                 <li><a className="hover:text-primary transition-colors" href="#">Careers</a></li>
                 <li><a className="hover:text-primary transition-colors" href="#">Blog</a></li>
-                <li><a className="hover:text-primary transition-colors" href="#">Contact</a></li>
+                <li>
+                  <a className="hover:text-primary transition-colors flex items-center gap-2" href="https://wa.me/919022826027" target="_blank">
+                    <span>Contact</span>
+                    <span className="text-xs opacity-70 font-mono">(+91 90228 26027)</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <div>

@@ -148,7 +148,7 @@ export default function GuidePage() {
                     ))}
                 </div>
                 <div className="max-w-[1200px] mx-auto border-t border-slate-100 pt-8 flex justify-between items-center text-slate-400 text-xs font-bold">
-                    <p>© 2024 EcoPulse. Built for the future.</p>
+                    <p>© 2026 EcoPulse. Built for the future.</p>
                     <div className="flex gap-8">
                         <a href="#">Privacy</a>
                         <a href="#">Terms</a>
