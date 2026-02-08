@@ -236,7 +236,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="max-w-[1200px] mx-auto border-t border-slate-200 dark:border-[#234836] pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
-            <p>© 2023 CleanEnergy AI Systems. All rights reserved.</p>
+            <p>© 2026 CleanEnergy AI Systems. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a className="hover:text-primary transition-colors" href="#">Privacy Policy</a>
               <a className="hover:text-primary transition-colors" href="#">Terms of Service</a>

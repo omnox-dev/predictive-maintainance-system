@@ -170,7 +170,7 @@ export default function HistoricalAnalytics() {
                                 </thead>
                                 <tbody className="divide-y divide-slate-200 dark:divide-white/5">
                                     <tr className="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
-                                        <td className="px-6 py-4 font-medium text-slate-900 dark:text-white">Oct 24, 2023</td>
+                                        <td className="px-6 py-4 font-medium text-slate-900 dark:text-white">Oct 24, 2026</td>
                                         <td className="px-6 py-4">T-402 Alpha</td>
                                         <td className="px-6 py-4">
                                             <div className="flex items-center gap-2">

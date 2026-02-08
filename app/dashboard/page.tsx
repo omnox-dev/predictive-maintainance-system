@@ -23,7 +23,7 @@ export default function DashboardPage() {
                         <div className="flex items-center gap-3">
                             <div className="flex items-center gap-2 rounded-lg border border-slate-200 dark:border-[#234836] bg-white dark:bg-[#1a3328] px-3 py-2 text-sm text-slate-600 dark:text-text-subtle">
                                 <span className="material-symbols-outlined text-[20px]">calendar_today</span>
-                                <span>Oct 24, 2023</span>
+                                <span>Oct 24, 2026</span>
                             </div>
                             <button className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-[#11221a] hover:bg-opacity-90 transition-colors shadow-[0_0_15px_rgba(19,236,128,0.3)]">
                                 <span className="material-symbols-outlined text-[20px]">download</span>
